@@ -8,6 +8,3 @@ scrape_configs:
       - targets:
           - 'synaptica-production.up.railway.app'
 
-storage:
-  tsdb:
-    path: /prometheus-data
