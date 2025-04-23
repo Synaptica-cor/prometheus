@@ -3,7 +3,8 @@ global:
 
 scrape_configs:
   - job_name: 'synaptica'
+    scheme: 'https'  # Вот это поле нужно явно указать для HTTPS
     metrics_path: '/metrics'
     static_configs:
       - targets:
-          - 'https://synaptica-production.up.railway.app'
+          - 'synaptica-production.up.railway.app'
