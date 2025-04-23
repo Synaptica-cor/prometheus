@@ -1,5 +1,5 @@
 FROM prom/prometheus:latest
 USER root
-RUN chown -R nobody:nogroup /prometheus
+RUN chown -R nobody:nobody /prometheus
 USER nobody
 COPY prometheus.yml /etc/prometheus/prometheus.yml
